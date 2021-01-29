@@ -17,7 +17,7 @@ import {
   FaRegLaughWink,
   FaHeart,
 } from "react-icons/fa";
-import sidebarBg from "./assets/bg1.jpg";
+import sidebarBg from "../assets/bg1.jpg";
 
 import React, { Component } from "react";
 
@@ -57,16 +57,34 @@ class Aside extends Component {
         <SidebarContent>
           <Menu iconShape="circle">
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home">Dashboard Khan</Link>
+              <Link to="/home">Text 1</Link>
             </MenuItem>
             <MenuItem icon={<FaTachometerAlt />}>
+              <Link to="/home/page2">Text 2</Link>
+            </MenuItem>
+            <MenuItem icon={<FaTachometerAlt />}>
+              <Link to="/home/page3">Text 3</Link>
+            </MenuItem>
+
+            <MenuItem icon={<FaTachometerAlt />}>
+              <Link to="/home/page4">Text 4</Link>
+            </MenuItem>
+
+            <MenuItem icon={<FaTachometerAlt />}>
+              <Link to="/home/page5">Text 5</Link>
+            </MenuItem>
+
+            {/* <MenuItem icon={<FaTachometerAlt />}>
+              <Link to="/home">Text 3</Link>
+            </MenuItem> */}
+            {/* <MenuItem icon={<FaTachometerAlt />}>
               <Link to="/home/2">Dashboard Khan</Link>
             </MenuItem>
             <MenuItem icon={<FaGem />}>
               <Link to="/home/3">Text 2</Link>
-            </MenuItem>
+            </MenuItem> */}
           </Menu>
-          <Menu iconShape="circle">
+          {/* <Menu iconShape="circle">
             <SubMenu title="Sub Menu Button" icon={<FaRegLaughWink />}>
               <MenuItem
                 onClick={() => {
@@ -92,7 +110,7 @@ class Aside extends Component {
                 </SubMenu>
               </SubMenu>
             </SubMenu>
-          </Menu>
+          </Menu> */}
         </SidebarContent>
       </ProSidebar>
     );

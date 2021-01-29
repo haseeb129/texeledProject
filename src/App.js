@@ -1,7 +1,8 @@
-	// import React from "react";
+// import React from "react";
 import Layout from "./Layout";
 
 import "./styles/App.scss";
+// import "./styles/image-gallery.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import React, { Component } from "react";

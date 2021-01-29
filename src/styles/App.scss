@@ -35,6 +35,7 @@ body {
 
   .btn-toggle {
     cursor: pointer;
+    padding: 10px;
     width: 35px;
     height: 35px;
     background: #353535;
@@ -87,7 +88,7 @@ body {
   }
 
   main {
-    padding: 24px;
+    padding: 2px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
