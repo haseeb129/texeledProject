@@ -1,22 +1,30 @@
 import React, { Component } from "react";
-import CarouselComponent from "./CarouselComponent";
 import { Row, Col, Container } from "react-bootstrap";
-
-class Page3 extends Component {
+class SellersPagePt1 extends Component {
   render() {
     return (
       <div>
         <br />
         <Container fluid>
           <Row>
-            <Col md={6}>
-              <h1 style={{ textAlign: "center" }}>First Title here</h1>
+            <Col md={6} className="fixedHeightColumn">
+              <h1 style={{ textAlign: "center" }}>Sellers Page Pt1</h1>
               <p className="p-2">
                 In ancient manuscripts, another means to divide sentences into
                 paragraphs was a line break (newline) followed by an initial at
                 the beginning of the next paragraph. An initial is an oversized
                 capital letter, sometimes outdented beyond the margin of the
                 text. This style can be seen, for example, in the original Old
+                English manuscript of Beowulf. Outdenting is still used in
+                English typography, though not commonly.[3] Modern English
+                typography usually indicates a new paragraph by indenting the
+                first line. This style can be seen in the (handwritten) United
+                States Constitution from 1787. For additional ornamentation, a
+                English manuscript of Beowulf. Outdenting is still used in
+                English typography, though not commonly.[3] Modern English
+                typography usually indicates a new paragraph by indenting the
+                first line. This style can be seen in the (handwritten) United
+                States Constitution from 1787. For additional ornamentation, a
                 English manuscript of Beowulf. Outdenting is still used in
                 English typography, though not commonly.[3] Modern English
                 typography usually indicates a new paragraph by indenting the
@@ -35,21 +43,17 @@ class Page3 extends Component {
             </Col>
 
             <Col md={6}>
-              <CarouselComponent />
+              <img
+                src="https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%252520Shot%2525202020-09-01%252520at%2525203.08.43%252520PM.png"
+                alt="Girl in a jacket"
+                className="responsiveImage"
+              />
             </Col>
           </Row>
         </Container>
-
-        {/* 
-        <Container fluid>
-          <Row>
-            <Col md={6}>
-            </Col>
-          </Row>
-        </Container> */}
       </div>
     );
   }
 }
 
-export default Page3;
+export default SellersPagePt1;

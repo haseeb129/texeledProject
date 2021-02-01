@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CarouselComponent from "./CarouselComponent";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+// import "react-image-gallery/styles/css/image-gallery.css";
 const images = [
   {
     original: "https://picsum.photos/id/1018/1000/600/",
@@ -18,7 +18,7 @@ const images = [
   },
 ];
 
-class Page5 extends Component {
+class DemoPageGeneric extends Component {
   state = {};
   render() {
     return (
@@ -26,6 +26,7 @@ class Page5 extends Component {
         <br />
 
         <Container fluid>
+          <h1 style={{ textAlign: "center" }}>Demo Page Generic</h1>
           <Row>
             <Col md={6} sm={6} className="p-4">
               <ImageGallery
@@ -169,4 +170,4 @@ class Page5 extends Component {
   }
 }
 
-export default Page5;
+export default DemoPageGeneric;

@@ -2,16 +2,6 @@
 import Aside from "./Sidebar/Aside";
 import Main from "./Main";
 
-import {
-  Row,
-  Col,
-  Navbar,
-  Nav,
-  Form,
-  Button,
-  FormControl,
-} from "react-bootstrap";
-
 import React, { Component } from "react";
 
 class Layout extends Component {

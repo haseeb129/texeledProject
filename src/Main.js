@@ -1,14 +1,15 @@
 import { useIntl } from "react-intl";
 import { FaHeart, FaBars } from "react-icons/fa";
 import reactLogo from "./assets/logo.svg";
-import C2 from "./Components/C2";
-import C1 from "./Components/C1";
-import C3 from "./Components/C3";
 import LandingPage from "./Components/LandingPage";
-import Page2 from "./Components/Page2";
-import Page3 from "./Components/Page3";
-import Page4 from "./Components/Page4";
-import Page5 from "./Components/Page5";
+import SellersPagePt1 from "./Components/SellersPagePt1";
+import SellersPagePt2 from "./Components/SellersPagePt2";
+
+import LandingPagep2 from "./Components/LandingPagep2";
+import VisionPage from "./Components/VisionPage";
+import DemoPageGeneric from "./Components/DemoPageGeneric";
+import GalleryPage from "./Components/GalleryPage";
+import BuyersPage from "./Components/BuyersPage";
 import Test from "./Components/Test";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -28,6 +29,52 @@ class Main extends Component {
         >
           <FaBars />
         </div>
+
+        <div className="fixedHeightPage" id="landingPageP1">
+          <LandingPage />
+        </div>
+
+        <br />
+        <div className="fixedHeightPage" id="landingPageP2">
+          <LandingPagep2 />
+        </div>
+        <br />
+        <br />
+
+        <div className="fixedHeightPage" id="visionPage">
+          <VisionPage />
+        </div>
+        <br />
+        <br />
+
+        <div className="fixedHeightPage" id="sellersPageP1">
+          <SellersPagePt1 />
+        </div>
+        <br />
+        <br />
+
+        <div className="fixedHeightPage" id="sellersPageP2">
+          <SellersPagePt2 />
+        </div>
+        <br />
+        <br />
+
+        <div className="fixedHeightPage" id="buyersPage">
+          <BuyersPage />
+        </div>
+        <br />
+        <br />
+        <div className="fixedHeightPage " id="demoPage">
+          <DemoPageGeneric />
+        </div>
+        <br />
+        <br />
+        <div className="fixedHeightPage" id="galleryPage">
+          <GalleryPage />
+        </div>
+        <br />
+        <br />
+        {/*         
         <Switch>
           <Route
             exact
@@ -59,9 +106,8 @@ class Main extends Component {
             path="/home/page5"
             render={(props) => <Page5 {...props} />}
           />
-          {/* <Route exact path="/home/2" render={(props) => <C2 {...props} />} />
-          <Route exact path="/home/3" render={(props) => <C3 {...props} />} /> */}
-        </Switch>
+ 
+        </Switch> */}
       </main>
     );
   }

@@ -1,5 +1,7 @@
 // import React from "react";
-import { Redirect, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { Link } from "react-scroll";
+import ScrollTo from "react-scroll-into-view";
 import {
   ProSidebar,
   Menu,
@@ -18,13 +20,11 @@ import {
   FaHeart,
 } from "react-icons/fa";
 import sidebarBg from "../assets/bg1.jpg";
+import logo from "../assets/LogoFile.jpg";
 
 import React, { Component } from "react";
 
 class Aside extends Component {
-  // constructor() {
-  //   super(this.props);
-  // }
   componentDidMount() {
     console.log("Aside props", this.props);
   }
@@ -50,67 +50,47 @@ class Aside extends Component {
               whiteSpace: "nowrap",
             }}
           >
-            Haseeb
+            <img
+              src={logo}
+              width="60"
+              height="50"
+              // className="d-inline-block align-top"
+              alt=""
+            />
+            <span className="ml-2"> TEXELED</span>
           </div>
         </SidebarHeader>
 
         <SidebarContent>
           <Menu iconShape="circle">
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home">Text 1</Link>
+              <ScrollTo selector={`#landingPageP1`}>Landing Page P1</ScrollTo>
             </MenuItem>
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home/page2">Text 2</Link>
+              <ScrollTo selector={`#landingPageP2`}>Landing Page P2</ScrollTo>
             </MenuItem>
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home/page3">Text 3</Link>
+              <ScrollTo selector={`#visionPage`}>Vision Page</ScrollTo>
             </MenuItem>
-
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home/page4">Text 4</Link>
+              <ScrollTo selector={`#sellersPageP1`}>Sellers Page P1</ScrollTo>
             </MenuItem>
-
             <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home/page5">Text 5</Link>
+              <ScrollTo selector={`#sellersPageP2`}>Sellers Page P2</ScrollTo>
             </MenuItem>
-
-            {/* <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home">Text 3</Link>
-            </MenuItem> */}
-            {/* <MenuItem icon={<FaTachometerAlt />}>
-              <Link to="/home/2">Dashboard Khan</Link>
+            <MenuItem icon={<FaTachometerAlt />}>
+              <ScrollTo selector={`#buyersPage`}>Buyers Page</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaGem />}>
-              <Link to="/home/3">Text 2</Link>
-            </MenuItem> */}
+            <MenuItem icon={<FaTachometerAlt />}>
+              <ScrollTo selector={`#demoPage`}>Demo Page</ScrollTo>
+            </MenuItem>
+            <MenuItem icon={<FaTachometerAlt />}>
+              <ScrollTo selector={`#galleryPage`}>Gallery Page</ScrollTo>
+            </MenuItem>
+            <MenuItem icon={<FaTachometerAlt />}>
+              <ScrollTo selector={`#galleryPage`}>LogIn</ScrollTo>
+            </MenuItem>
           </Menu>
-          {/* <Menu iconShape="circle">
-            <SubMenu title="Sub Menu Button" icon={<FaRegLaughWink />}>
-              <MenuItem
-                onClick={() => {
-                  console.log("ASASAS", this.props.history);
-                  this.props.history.push("home/3");
-                  // this.props.history.push("/c2");
-                }}
-              >
-                Dashboard Khan
-              </MenuItem>
-              <MenuItem>submenu 2</MenuItem>
-              <MenuItem>submenu 3</MenuItem>
-            </SubMenu>
-
-            <SubMenu title="multiLevel" icon={<FaList />}>
-              <SubMenu title="submenu 3">
-                <MenuItem> submenu 3.1 </MenuItem>
-                <MenuItem>submenu 3.2 </MenuItem>
-                <SubMenu title="submenu">
-                  <MenuItem>3.3.1</MenuItem>
-                  <MenuItem>3.3.2</MenuItem>
-                  <MenuItem>3.3.3</MenuItem>
-                </SubMenu>
-              </SubMenu>
-            </SubMenu>
-          </Menu> */}
         </SidebarContent>
       </ProSidebar>
     );
@@ -118,67 +98,3 @@ class Aside extends Component {
 }
 
 export default Aside;
-
-// const Aside = ({ collapsed, toggled, handleToggleSidebar }) => {
-//   return (
-//     <ProSidebar
-//       // image={sidebarBg}
-//       collapsed={collapsed}
-//       toggled={toggled}
-//       breakPoint="lg"
-//       onToggle={handleToggleSidebar}
-//     >
-//       <SidebarHeader>
-//         <div
-//           style={{
-//             padding: "24px",
-//             textTransform: "uppercase",
-//             fontWeight: "bold",
-//             fontSize: 14,
-//             letterSpacing: "1px",
-//             overflow: "hidden",
-//             textOverflow: "ellipsis",
-//             whiteSpace: "nowrap",
-//           }}
-//         >
-//           Haseeb
-//         </div>
-//       </SidebarHeader>
-
-//       <SidebarContent>
-//         <Menu iconShape="circle">
-//           <MenuItem icon={<FaTachometerAlt />}>Dashboard Khan</MenuItem>
-//           <MenuItem icon={<FaGem />}>Text 2</MenuItem>
-//         </Menu>
-//         <Menu iconShape="circle">
-//           <SubMenu title="Sub Menu Button" icon={<FaRegLaughWink />}>
-//             <MenuItem
-//               onClick={() => {
-//                 console.log("ASASAS", this.props);
-//                 // this.props.history.push("/c2");
-//               }}
-//             >
-//               Dashboard Khan
-//             </MenuItem>
-//             <MenuItem>submenu 2</MenuItem>
-//             <MenuItem>submenu 3</MenuItem>
-//           </SubMenu>
-
-//           <SubMenu title="multiLevel" icon={<FaList />}>
-//             <SubMenu title="submenu 3">
-//               <MenuItem> submenu 3.1 </MenuItem>
-//               <MenuItem>submenu 3.2 </MenuItem>
-//               <SubMenu title="submenu">
-//                 <MenuItem>3.3.1</MenuItem>
-//                 <MenuItem>3.3.2</MenuItem>
-//                 <MenuItem>3.3.3</MenuItem>
-//               </SubMenu>
-//             </SubMenu>
-//           </SubMenu>
-//         </Menu>
-//       </SidebarContent>
-//     </ProSidebar>
-//   );
-// };
-
-// export default Aside;

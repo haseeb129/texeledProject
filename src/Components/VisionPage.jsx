@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import CarouselComponent from "./CarouselComponent";
 import { Row, Col, Container } from "react-bootstrap";
 
-class Page4 extends Component {
+class VisionPage extends Component {
   render() {
     return (
       <div>
         <br />
-        <h1 style={{ textAlign: "center" }}>Page 4 Title here</h1>
+        <h1 style={{ textAlign: "center" }}>Vision Page</h1>
         <Container fluid>
           <Row>
             <Col md={6}>
@@ -72,4 +72,4 @@ class Page4 extends Component {
   }
 }
 
-export default Page4;
+export default VisionPage;

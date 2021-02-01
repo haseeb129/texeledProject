@@ -5,8 +5,8 @@ class LandingPage extends Component {
     return (
       <div class="container">
         <div class="center1">
-          <h1>Center Title</h1>
-          <p>I am vertically and horizontally centered.</p>
+          <h1>TEXELED</h1>
+          <p>TEXELED TEXELED TEXELED TEXELED.</p>
 
           <div className="containerButton">
             <Button variant="success" className="centerButton">
