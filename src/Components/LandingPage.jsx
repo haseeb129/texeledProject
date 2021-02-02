@@ -4,18 +4,37 @@ import ReactPlayer from "react-player";
 
 class LandingPage extends Component {
   render() {
-    return (
-      <div class="containerVideo">
-        <div class="centerVideo">
-          <div class="videoText">
-            <h1>TEXELED</h1>
-            <p>TEXELED TEXELED TEXELED TEXELED.</p>
-          </div>
+    // return (
+    //   <div class="containerVideo">
+    //     <div class="centerVideo">
+    //       <div class="videoText">
+    //         <h1>TEXELED</h1>
+    //         <p>TEXELED TEXELED TEXELED TEXELED.</p>
+    //       </div>
 
-          <ReactPlayer
-            // className="videoPlayer"
-            url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-          />
+    //       <ReactPlayer
+    //         // className="videoPlayer"
+    //         url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+    //       />
+    //     </div>
+    //   </div>
+    // );
+    return (
+      <div className="p-4">
+        <div class="container4">
+          <div class="container4Inner">
+            <div class="videoText">
+              <h1>TEXELED</h1>
+              <p>TEXELED TEXELED TEXELED TEXELED.</p>
+            </div>
+
+            <ReactPlayer
+              // className="videoPlayer"
+              width="100%"
+              url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+              controls={true}
+            />
+          </div>
         </div>
       </div>
     );

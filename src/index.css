@@ -55,15 +55,33 @@ code {
   margin: -25px 0 0 -25px; */
 }
 
+.container4 {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.container4Inner {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 100%;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .centerVideo {
   position: relative;
 }
 
 .videoText {
-  padding-top: 5%;
+  padding-top: 7%;
   position: absolute;
+  text-align: center;
   width: 100%;
   color: white;
+  opacity: 0.9;
 }
 
 .videoPlayer {

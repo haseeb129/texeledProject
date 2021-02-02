@@ -18,6 +18,8 @@ import {
   FaGithub,
   FaRegLaughWink,
   FaHeart,
+  FaRocketchat,
+  FaRocket,
 } from "react-icons/fa";
 import sidebarBg from "../assets/bg1.jpg";
 import logo from "../assets/LogoFile.jpg";
@@ -63,31 +65,31 @@ class Aside extends Component {
 
         <SidebarContent>
           <Menu iconShape="circle">
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#landingPageP1`}>Landing Page P1</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#landingPageP2`}>Landing Page P2</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#visionPage`}>Vision Page</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#sellersPageP1`}>Sellers Page P1</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#sellersPageP2`}>Sellers Page P2</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#buyersPage`}>Buyers Page</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#demoPage`}>Demo Page</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#galleryPage`}>Gallery Page</ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaTachometerAlt />}>
+            <MenuItem icon={<FaRocket />}>
               <ScrollTo selector={`#galleryPage`}>LogIn</ScrollTo>
             </MenuItem>
           </Menu>
