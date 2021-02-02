@@ -1,6 +1,6 @@
 // import React from "react";
 import Layout from "./Layout";
-
+import Test from "./Components/Test";
 import "./styles/App.scss";
 import "./styles/image-gallery.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
@@ -27,6 +27,7 @@ class App extends Component {
               }}
             />
             <Route path="/home" render={(props) => <Layout {...props} />} />
+            <Route path="/Test" render={(props) => <Test {...props} />} />
           </Switch>
         </React.Fragment>
       </BrowserRouter>

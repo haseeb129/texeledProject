@@ -2,7 +2,8 @@
 import ImageGallery from "react-image-gallery";
 
 import React, { Component } from "react";
-
+import ReactPlayer from "react-player";
+import { Button } from "react-bootstrap";
 class Test extends Component {
   state = {
     arr: [
@@ -29,15 +30,24 @@ class Test extends Component {
   render() {
     return (
       <div>
-        <h1>asas</h1>
-        <ImageGallery
+        <h1 className="textColor">asas</h1>
+        {/* <ImageGallery
           items={this.state.arr}
           thumbnailPosition="right"
           showFullscreenButton={false}
           showPlayButton={false}
           showNav={false}
         />
-        )
+        ) */}
+        <ReactPlayer
+          className="videoPlayer"
+          url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+          width="100%"
+          // height="500px"
+          // playing
+          playIcon={<Button>Play</Button>}
+          light="https://images.unsplash.com/photo-1514477917009-389c76a86b68?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2t5fGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80"
+        />
       </div>
     );
   }
