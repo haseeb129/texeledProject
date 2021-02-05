@@ -1,63 +1,38 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 import ReactPlayer from "react-player";
-
+import video from "../assets/sample.mp4";
 class LandingPage extends Component {
+  state = { playing: false };
+  controlVideo = () => {
+    let { playing } = this.state;
+    console.log("playing", playing);
+    this.setState({ playing: !playing });
+  };
   render() {
-    // return (
-    //   <div class="containerVideo">
-    //     <div class="centerVideo">
-    //       <div class="videoText">
-    //         <h1>TEXELED</h1>
-    //         <p>TEXELED TEXELED TEXELED TEXELED.</p>
-    //       </div>
-
-    //       <ReactPlayer
-    //         // className="videoPlayer"
-    //         url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-    //       />
-    //     </div>
-    //   </div>
-    // );
     return (
-      <div className="p-4">
-        <div class="container4">
-          <div class="container4Inner">
-            <div class="videoText">
-              <h1>TEXELED</h1>
-              <p>TEXELED TEXELED TEXELED TEXELED.</p>
+      <div className="p-1 allPageSize">
+        <div className="containerMain">
+          <div className="childMain">
+            <div className="div1">
+              <ReactPlayer
+                width="100%"
+                height="100%"
+                url={video}
+                playing={this.state.playing}
+                controls={false}
+              />
+              <div className="div2">
+                <h1>TEXELED</h1>
+                <p>TEXELED TEXELED TEXELED TEXELED.</p>
+                <Button onClick={this.controlVideo}>Play Video</Button>
+              </div>
             </div>
-
-            <ReactPlayer
-              // className="videoPlayer"
-              width="100%"
-              url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-              controls={true}
-            />
           </div>
         </div>
       </div>
     );
   }
-  // render() {
-  //   return (
-  //     <div class="container">
-  //       <div class="center1">
-  //         <h1>TEXELED</h1>
-  //         <p>TEXELED TEXELED TEXELED TEXELED.</p>
-  //         {/* <ReactPlayer
-  //           // className="videoPlayer"
-  //           url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
-  //         /> */}
-  //         <div className="containerButton">
-  //           <Button variant="success" className="centerButton">
-  //             Play
-  //           </Button>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
 }
 
 export default LandingPage;

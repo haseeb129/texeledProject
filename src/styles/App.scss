@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-$sidebar-bg-color: #1d1d1d;
+$sidebar-bg-color: #f8f8ff;
 $submenu-bg-color: rgba(255, 255, 255, 0.05);
 $submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
-$sidebar-color: #adadad;
-$highlight-color: #d8d8d8;
-$sidebar-width: 220px;
+$sidebar-color: black;
+$highlight-color: #808080;
+$sidebar-width: 270px;
 // $sidebar-height: 220px;
 $sidebar-collapsed-width: 80px !default;
 $icon-bg-color: rgba(255, 255, 255, 0.05);
@@ -27,7 +27,11 @@ body {
 #root {
   height: 100%;
 }
-
+.sidebarFontSize {
+  font-size: 3vh;
+  margin-top: 20px;
+  // margin-bottom: 20px;
+}
 .app {
   height: 100%;
   display: flex;

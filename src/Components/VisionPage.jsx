@@ -5,12 +5,12 @@ import { Row, Col, Container } from "react-bootstrap";
 class VisionPage extends Component {
   render() {
     return (
-      <div>
+      <div className="allPageSize">
         <br />
         <h1 style={{ textAlign: "center" }}>Vision Page</h1>
         <Container fluid>
           <Row>
-            <Col md={6}>
+            <Col md={6} className="textJustify">
               <p className="p-2">
                 In ancient manuscripts, another means to divide sentences into
                 paragraphs was a line break (newline) followed by an initial at
@@ -34,7 +34,7 @@ class VisionPage extends Component {
               </p>
             </Col>
 
-            <Col md={6}>
+            <Col md={6} className="textJustify">
               <p className="p-2">
                 In ancient manuscripts, another means to divide sentences into
                 paragraphs was a line break (newline) followed by an initial at

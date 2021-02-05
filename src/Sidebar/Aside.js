@@ -1,6 +1,3 @@
-// import React from "react";
-import { Redirect } from "react-router-dom";
-import { Link } from "react-scroll";
 import ScrollTo from "react-scroll-into-view";
 import {
   ProSidebar,
@@ -11,6 +8,7 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
+import { SocialMediaIconsReact } from "social-media-icons-react";
 import {
   FaTachometerAlt,
   FaGem,
@@ -20,8 +18,10 @@ import {
   FaHeart,
   FaRocketchat,
   FaRocket,
+  FaFacebook,
 } from "react-icons/fa";
 import sidebarBg from "../assets/bg1.jpg";
+import { SocialIcon } from "react-social-icons";
 import logo from "../assets/LogoFile.jpg";
 
 import React, { Component } from "react";
@@ -33,7 +33,8 @@ class Aside extends Component {
   render() {
     return (
       <ProSidebar
-        image={sidebarBg}
+        // image={sidebarBg}
+        backgroundColor="blue"
         collapsed={this.props.collapsed}
         toggled={this.props.toggled}
         breakPoint="lg"
@@ -42,7 +43,7 @@ class Aside extends Component {
         <SidebarHeader>
           <div
             style={{
-              padding: "24px",
+              // padding: "20px",
               textTransform: "uppercase",
               fontWeight: "bold",
               fontSize: 14,
@@ -52,48 +53,137 @@ class Aside extends Component {
               whiteSpace: "nowrap",
             }}
           >
-            <img
-              src={logo}
-              width="60"
-              height="50"
-              // className="d-inline-block align-top"
-              alt=""
-            />
-            <span className="ml-2"> TEXELED</span>
+            <ScrollTo selector={`#landingPageP1`}>
+              <img
+                src={logo}
+                width="100%"
+                height="130"
+                // className="d-inline-block align-top"
+                alt=""
+              />
+            </ScrollTo>
           </div>
         </SidebarHeader>
 
         <SidebarContent>
           <Menu iconShape="circle">
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#landingPageP1`}>Landing Page P1</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#landingPageP1`}>
+                <span className="sidebarFontSize">Landing Page P1</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#landingPageP2`}>Landing Page P2</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#landingPageP2`}>
+                <span className="sidebarFontSize">Landing Page P2</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#visionPage`}>Vision Page</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#visionPage`}>
+                <span
+                  className=""
+                  style={{ display: "block", fontSize: " 3vh" }}
+                >
+                  Vision Page
+                </span>
+                <span style={{ paddingLeft: "10px", fontStyle: "italic" }}>
+                  Coming Soon
+                </span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#sellersPageP1`}>Sellers Page P1</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#sellersPageP1`}>
+                <span className="sidebarFontSize">Sellers Page P1</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#sellersPageP2`}>Sellers Page P2</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#sellersPageP2`}>
+                <span className="sidebarFontSize">Sellers Page P2</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#buyersPage`}>Buyers Page</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#buyersPage`}>
+                <span className="sidebarFontSize">Buyers Page</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#demoPage`}>Demo Page</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#demoPage`}>
+                <span className="sidebarFontSize">Demo Page</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#galleryPage`}>Gallery Page</ScrollTo>
+            <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
+              <ScrollTo selector={`#galleryPage`}>
+                <span className="sidebarFontSize">Gallery Page</span>
+              </ScrollTo>
             </MenuItem>
-            <MenuItem icon={<FaRocket />}>
-              <ScrollTo selector={`#galleryPage`}>LogIn</ScrollTo>
+            <MenuItem
+              style={{
+                // backgroundColor: "#083242",
+                paddingLeft: "40px",
+                marginBottom: "8px",
+              }}
+            >
+              <ScrollTo selector={`#galleryPage`}>
+                <span
+                  style={{
+                    color: "#4391DF",
+                    fontWeight: "bold",
+                  }}
+                  className="sidebarFontSize"
+                >
+                  LogIn
+                </span>
+              </ScrollTo>
+            </MenuItem>
+            <MenuItem style={{ marginBottom: "8px" }}>
+              <SocialIcon
+                network="facebook"
+                url="http://facebook.com"
+                style={{ height: 40, width: 40, margin: "5px" }}
+              />
+              <SocialIcon
+                network="instagram"
+                url="http://instagram.com"
+                style={{ height: 40, width: 40, margin: "5px" }}
+              />
+              <SocialIcon
+                network="twitter"
+                url="http://twitter.com"
+                style={{ height: 40, width: 40, margin: "5px" }}
+              />
+              <SocialIcon
+                network="youtube"
+                url="http://youtube.com"
+                style={{
+                  height: 40,
+                  width: 40,
+                  margin: "5px",
+                }}
+              />
+            </MenuItem>
+            <MenuItem>
+              {/* <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.96)"
+              borderWidth="5"
+              borderStyle="solid"
+              icon="instagram"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="rgba(233,233,233,1)"
+              iconSize="5"
+              roundness="50%"
+              url="https://some-website.com/my-social-media-url"
+              size="100"
+              /> */}
             </MenuItem>
           </Menu>
         </SidebarContent>
+
+        {/* <SidebarFooter>
+          <SocialIcon
+            network="tumblr"
+            url="http://twitter.com"
+            style={{ height: 40, width: 40 }}
+          />
+        </SidebarFooter> */}
       </ProSidebar>
     );
   }

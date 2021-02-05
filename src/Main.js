@@ -40,7 +40,6 @@ class Main extends Component {
         </div>
         <br />
         <br />
-
         <div className="fixedHeightPage" id="visionPage">
           <VisionPage />
         </div>
@@ -64,6 +63,7 @@ class Main extends Component {
         </div>
         <br />
         <br />
+
         <div className="fixedHeightPage " id="demoPage">
           <DemoPageGeneric />
         </div>
