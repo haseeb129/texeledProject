@@ -346,6 +346,10 @@ code {
   align-content: center;
   text-align: center;
   color: white;
+  /* right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; */
 }
 /* 
 .div2 {
