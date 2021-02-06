@@ -7,7 +7,9 @@ class GalleryPage extends Component {
       <div className="allPageSize">
         <br />
         <Container fluid>
-          <h1 style={{ textAlign: "center" }}>Gallery Page</h1>
+          <h1 style={{ textAlign: "center" }} className="Heading">
+            Gallery Page
+          </h1>
 
           <Row>
             <Col>
@@ -27,21 +29,18 @@ class GalleryPage extends Component {
                   className="fake_imgGallery"
                   alt=""
                 />
-                <div className="wrapper2">
-                  <Button
-                    variant="default"
-                    className="customButton"
-                    style={{
-                      borderStyle: "groove",
-                      borderColor: "black",
-                      borderWidth: "2px",
-                    }}
-                  >
-                    <span style={{ color: "black", fontSize: "15px" }}>
-                      E X P L O R E
-                    </span>
-                  </Button>
-                </div>
+                <Button
+                  className="buttonCenter"
+                  variant="default"
+                  className="customButton"
+                  style={{
+                    borderStyle: "groove",
+                    borderColor: "black",
+                    borderWidth: "2px",
+                  }}
+                >
+                  <span className="Demobutton">E X P L O R E</span>
+                </Button>
               </div>
               <span style={{ marginBottom: "0px", marginLeft: "3%" }}>
                 Project X
@@ -67,24 +66,16 @@ class GalleryPage extends Component {
                   alt=""
                 />
                 <Button
+                  className="buttonCenter"
                   variant="default"
-                  className="customButton fake_imgGallery1"
+                  className="customButton"
                   style={{
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
                   }}
                 >
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "12px",
-                      padding: "2px",
-                      wordWrap: "break-word",
-                    }}
-                  >
-                    EXPLORE
-                  </span>
+                  <span className="Demobutton">E X P L O R E</span>
                 </Button>
               </div>
 
@@ -112,24 +103,16 @@ class GalleryPage extends Component {
                   alt=""
                 />
                 <Button
+                  className="buttonCenter"
                   variant="default"
-                  className="customButton fake_imgGallery1"
+                  className="customButton"
                   style={{
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
                   }}
                 >
-                  <span
-                    style={{
-                      color: "black",
-                      fontSize: "12px",
-                      padding: "2px",
-                      wordWrap: "break-word",
-                    }}
-                  >
-                    EXPLORE
-                  </span>
+                  <span className="Demobutton">E X P L O R E</span>
                 </Button>
               </div>
               <span style={{ marginBottom: "0px", marginLeft: "3%" }}>

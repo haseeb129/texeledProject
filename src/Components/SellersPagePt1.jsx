@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container } from "react-bootstrap";
+import Image1 from "../assets/sofas.jpg";
 class SellersPagePt1 extends Component {
   render() {
     return (
@@ -8,9 +9,9 @@ class SellersPagePt1 extends Component {
         <Container fluid>
           <Row>
             <Col md={6} className="fixedHeightColumn">
-              <h1 style={{ textAlign: "center" }}>Sellers Page Pt1</h1>
+              <h1 style={{ textAlign: "center" }} classNam="Heading">Sellers Page Pt1</h1>
               <div className="allPageSizeInner">
-                <p className="p-2">
+                <p className="p-2 Content">
                   In ancient manuscripts, another means to divide sentences into
                   paragraphs was a line break (newline) followed by an initial
                   at the beginning of the next paragraph. An initial is an
@@ -52,7 +53,7 @@ class SellersPagePt1 extends Component {
               <div className="childMainCrousal" style={{ height: "80vh" }}>
                 <div className="containerImage">
                   <img
-                    src="https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%252520Shot%2525202020-09-01%252520at%2525203.08.43%252520PM.png"
+                    src={Image1}
                     alt="Girl in a jacket"
                     className="responsiveImage"
                   />

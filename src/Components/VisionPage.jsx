@@ -7,11 +7,11 @@ class VisionPage extends Component {
     return (
       <div className="allPageSize">
         <br />
-        <h1 style={{ textAlign: "center" }}>Vision Page</h1>
+        <h1 style={{ textAlign: "center" }} className="Heading">Vision Page</h1>
         <Container fluid>
           <Row>
             <Col md={6} className="textJustify">
-              <p className="p-2">
+              <p className="p-2 Content">
                 In ancient manuscripts, another means to divide sentences into
                 paragraphs was a line break (newline) followed by an initial at
                 the beginning of the next paragraph. An initial is an oversized
@@ -35,7 +35,7 @@ class VisionPage extends Component {
             </Col>
 
             <Col md={6} className="textJustify">
-              <p className="p-2">
+              <p className="p-2 Content">
                 In ancient manuscripts, another means to divide sentences into
                 paragraphs was a line break (newline) followed by an initial at
                 the beginning of the next paragraph. An initial is an oversized
