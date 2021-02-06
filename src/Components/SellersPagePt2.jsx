@@ -7,7 +7,7 @@ class SellersPagePt2 extends Component {
         <br />
         <Container fluid>
           <Row>
-            <Col md={6} className="containerMainCrousal">
+            <Col md={6} lg={6} sm={12} className="containerMainCrousal">
               <div className="childMainCrousal" style={{ height: "80vh" }}>
                 <div className="containerImage">
                   <img
@@ -31,7 +31,7 @@ class SellersPagePt2 extends Component {
               </div>
             </Col>
 
-            <Col md={6} className="fixedHeightColumn1">
+            <Col md={6} lg={6} sm={12} className="fixedHeightColumn1">
               <h1 style={{ textAlign: "center" }}>Sellers Page Pt2</h1>
               <div className="allPageSizeInner">
                 <p className="p-2">

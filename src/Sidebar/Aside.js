@@ -23,6 +23,11 @@ import {
 import sidebarBg from "../assets/bg1.jpg";
 import { SocialIcon } from "react-social-icons";
 import logo from "../assets/LogoFile.jpg";
+import logo1 from "../assets/LogoFile1.png";
+import logo2 from "../assets/LogoFile2.png";
+import logo3 from "../assets/LogoFile3.png";
+import logo4 from "../assets/LogoFile4.png";
+import logo5 from "../assets/LogoFile5.png";
 
 import React, { Component } from "react";
 
@@ -54,13 +59,23 @@ class Aside extends Component {
             }}
           >
             <ScrollTo selector={`#landingPageP1`}>
-              <img
-                src={logo}
-                width="100%"
-                height="130"
-                // className="d-inline-block align-top"
-                alt=""
-              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  borderRight: "2px solid #000",
+                  borderCornerShape: "bevel",
+                }}
+              >
+                <img
+                  style={{ width: "200px" }}
+                  src={logo5}
+                  width="100px"
+                  height="150px"
+                  // className="d-inline-block align-top"
+                  alt=""
+                />
+              </div>
             </ScrollTo>
           </div>
         </SidebarHeader>

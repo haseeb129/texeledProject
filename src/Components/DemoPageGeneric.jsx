@@ -187,7 +187,7 @@ class DemoPageGeneric extends Component {
                   },
                 ]}
               />
-              <div style={{ textAlign: "center", alignItems: "center" }}>
+              <div className="postionCenter">
                 <p className="mb-1">TEXT TEXT TEXT TEXT TEXT</p>
                 <Button
                   variant="default"

@@ -49,8 +49,8 @@ class Main extends Component {
         <div className="fixedHeightPage" id="sellersPageP1">
           <SellersPagePt1 />
         </div>
-        <br />
-        <br />
+        {/* <br />
+        <br /> */}
 
         <div className="fixedHeightPage" id="sellersPageP2">
           <SellersPagePt2 />
