@@ -42,13 +42,11 @@ code {
   /* width: 100%; */
   position: relative;
 }
-.Content
-{
+.Content {
   line-height: 28px;
   font-size: 16px;
 }
-.Heading
-{
+.Heading {
   font-size: 40px;
   font-weight: 700;
   color: black;
@@ -69,20 +67,16 @@ code {
     text-align: center;
     padding-top: 50%;
   }
-  .customButtonn
-  {
-    left: 21% !important; 
+  .customButtonn {
+    left: 21% !important;
   }
-  .textCenter
-  {
-    left: 4% !important;;
+  .textCenter {
+    left: 4% !important;
   }
-  .responsiveImage
-  {
+  .responsiveImage {
     display: none;
   }
-  .containerMainCrousal
-  {
+  .containerMainCrousal {
     display: none !important;
   }
 }
@@ -219,7 +213,6 @@ code {
   /* trans */
 }
 
-
 .customButtonn {
   /* background-image: linear-gradient(to right, #0bd3d3 35%, #f890e7 69%); */
   /* background-color: #0bd3d3; */
@@ -342,7 +335,7 @@ code {
 .div1 {
   position: relative;
   /* min-height: 100vh; */
-  width: 100%;
+  /* width: 100%; */
 }
 
 .div2 {
@@ -353,10 +346,6 @@ code {
   align-content: center;
   text-align: center;
   color: white;
-  /* right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%; */
 }
 /* 
 .div2 {
@@ -391,14 +380,12 @@ code {
   position: relative;
   left: 30%;
 }
-.buttonCenter
-{
+.buttonCenter {
   position: relative;
-  left:29%;
+  left: 29%;
 }
-.Demobutton
-{
-  color:black;
+.Demobutton {
+  color: black;
   font-size: 15px;
 }
 
@@ -513,4 +500,10 @@ code {
 
 .marginRight {
   padding-right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .showLogo {
+    display: none;
+  }
 }

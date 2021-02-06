@@ -33,7 +33,9 @@ class SellersPagePt2 extends Component {
             </Col>
 
             <Col md={6} lg={6} sm={12} className="fixedHeightColumn1">
-              <h1 style={{ textAlign: "center" }}>Sellers Page Pt2</h1>
+              <h1 style={{ textAlign: "center" }} className="Heading">
+                Sellers Page Pt2
+              </h1>
               <div className="allPageSizeInner">
                 <p className="p-2 Content">
                   In ancient manuscripts, another means to divide sentences into

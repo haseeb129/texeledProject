@@ -24,9 +24,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.pro-sidebar-layout {
+.pro-sidebar-content {
   border-right: 1px solid black;
 }
+.pro-sidebar-header {
+  border-right: 1px solid black;
+  border-bottom: 0px solid white !important;
+}
+
+// .pro-menu {
+//   border-right: 2px solid black !important;
+// }
 #root {
   height: 100%;
 }
@@ -44,7 +52,7 @@ body {
     cursor: pointer;
     padding: 5px;
     width: 40px;
-    height: 35px;
+    // height: 35px;
     background: white;
     color: black;
     border: 2px solid black;
@@ -103,7 +111,7 @@ body {
     overflow-y: auto;
     header {
       margin-bottom: 40px;
-      border-bottom: 1px solid #efefef;
+      // border-bottom: 1px solid #efefef;
       h1 {
         display: flex;
         align-items: center;

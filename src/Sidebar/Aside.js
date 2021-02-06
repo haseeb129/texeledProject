@@ -9,6 +9,8 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 import { SocialMediaIconsReact } from "social-media-icons-react";
+import { FaBars } from "react-icons/fa";
+
 import {
   FaTachometerAlt,
   FaGem,
@@ -39,7 +41,7 @@ class Aside extends Component {
     return (
       <ProSidebar
         // image={sidebarBg}
-        backgroundColor="blue"
+        backgroundColor="white"
         collapsed={this.props.collapsed}
         toggled={this.props.toggled}
         breakPoint="lg"
@@ -47,24 +49,33 @@ class Aside extends Component {
       >
         <SidebarHeader>
           <div
-            style={{
-              // padding: "20px",
-              textTransform: "uppercase",
-              fontWeight: "bold",
-              fontSize: 14,
-              letterSpacing: "1px",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-            }}
+            className="btn-toggle "
+            style={{ margin: "2px" }}
+            onClick={() => this.props.handleToggleSidebar(false)}
+          >
+            <FaBars />
+          </div>
+          <div
+            style={
+              {
+                // padding: "20px",
+                // textTransform: "uppercase",
+                // fontWeight: "bold",
+                // fontSize: 14,
+                // letterSpacing: "1px",
+                // overflow: "hidden",
+                // textOverflow: "ellipsis",
+                // whiteSpace: "nowrap",
+              }
+            }
           >
             <ScrollTo selector={`#landingPageP1`}>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  borderRight: "2px solid #000",
-                  borderCornerShape: "bevel",
+                  // borderRight: "2px solid #000",
+                  // borderCornerShape: "bevel",
                 }}
               >
                 <img
@@ -79,7 +90,7 @@ class Aside extends Component {
         </SidebarHeader>
 
         <SidebarContent>
-          <Menu >
+          <Menu>
             <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
               <ScrollTo selector={`#landingPageP1`}>
                 <span className="sidebarFontSize">Landing Page P1</span>

@@ -9,7 +9,9 @@ class SellersPagePt1 extends Component {
         <Container fluid>
           <Row>
             <Col md={6} className="fixedHeightColumn">
-              <h1 style={{ textAlign: "center" }} classNam="Heading">Sellers Page Pt1</h1>
+              <h1 style={{ textAlign: "center" }} className="Heading">
+                Sellers Page Pt1
+              </h1>
               <div className="allPageSizeInner">
                 <p className="p-2 Content">
                   In ancient manuscripts, another means to divide sentences into
