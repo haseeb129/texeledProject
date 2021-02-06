@@ -201,7 +201,8 @@ code {
   margin-top: 1%;
   /* position: relative;
   left: 29%; */
-  padding: 0% 1%;
+  /* padding: 0% 1%; */
+  padding: .375rem .75rem;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -389,12 +390,12 @@ code {
 }
 .textCenter {
   position: relative;
-  left: 30%;
+  left: 24%;
 }
 .buttonCenter
 {
   position: relative;
-  left:29%;
+  left:25%;
 }
 .Demobutton
 {

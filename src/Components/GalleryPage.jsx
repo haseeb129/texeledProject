@@ -12,6 +12,7 @@ class GalleryPage extends Component {
           <Row>
             <Col>
               <div class="containerGallery">
+            
                 <img
                   src="https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80"
                   className="fake_imgGallery"
@@ -42,10 +43,12 @@ class GalleryPage extends Component {
                     E X P L O R E
                   </span>
                 </Button>
+                
               </div>
-              <span style={{ marginBottom: "0px", marginLeft: "3%" }}>
+              <span style={{ marginBottom: "0px", marginLeft: "8%" }}>
                 Project X
               </span>
+            
             </Col>
           </Row>
           <Row>
@@ -83,7 +86,7 @@ class GalleryPage extends Component {
                 </Button>
               </div>
 
-              <span style={{ marginBottom: "0px", marginLeft: "3%" }}>
+              <span style={{ marginBottom: "0px", marginLeft: "8%" }}>
                 Project X
               </span>
             </Col>
@@ -122,7 +125,7 @@ class GalleryPage extends Component {
                   </span>
                 </Button>
               </div>
-              <span style={{ marginBottom: "0px", marginLeft: "3%" }}>
+              <span style={{ marginBottom: "0px", marginLeft: "8%" }}>
                 Project X
               </span>
             </Col>
