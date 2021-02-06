@@ -40,7 +40,7 @@ class CarouselComponent extends Component {
         </Carousel.Item>
         <Carousel.Item style={{ Height: "60vh" }}>
           <img
-            src="https://media.architecturaldigest.com/photos/5f4e9c54072307c75638c0f1/1:1/w_1280%2Cc_limit/Screen%252520Shot%2525202020-09-01%252520at%2525203.08.43%252520PM.png"
+            src={Image1}
             alt="Girl in a jacket"
             className="responsiveImage"
           />
