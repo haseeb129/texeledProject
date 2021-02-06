@@ -42,7 +42,17 @@ code {
   /* width: 100%; */
   position: relative;
 }
-
+.Content
+{
+  line-height: 28px;
+  font-size: 16px;
+}
+.Heading
+{
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
 .center1 {
   text-align: center;
   padding-top: 20%;
@@ -58,6 +68,22 @@ code {
   .center1 {
     text-align: center;
     padding-top: 50%;
+  }
+  .customButtonn
+  {
+    left: 21% !important; 
+  }
+  .textCenter
+  {
+    left: 14% !important;;
+  }
+  .responsiveImage
+  {
+    display: none;
+  }
+  .containerMainCrousal
+  {
+    display: none !important;
   }
 }
 
@@ -167,14 +193,42 @@ code {
   padding-left: 2%;
   padding-right: 2%;
 }
-
 .customButton {
   /* background-image: linear-gradient(to right, #0bd3d3 35%, #f890e7 69%); */
   /* background-color: #0bd3d3; */
   /* border: 1px solid; */
   font-size: 10px;
   margin-top: 1%;
+  /* position: relative;
+  left: 29%; */
   padding: 0% 1%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0%;
+  /* border-color: black; */
+  /* border-style: outset; */
+  color: black;
+  box-shadow: 2px 2px black;
+}
+.customButton:hover {
+  box-shadow: 0px 0px black;
+  transform: translateX(1px);
+
+  /* transform: translateY(1px); */
+  /* trans */
+}
+
+
+.customButtonn {
+  /* background-image: linear-gradient(to right, #0bd3d3 35%, #f890e7 69%); */
+  /* background-color: #0bd3d3; */
+  /* border: 1px solid; */
+  font-size: 10px;
+  margin-top: 1%;
+  position: relative;
+  left: 34%;
+
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -333,9 +387,19 @@ code {
   padding: 20px;
   color: #726e97; */
 }
-.postionCenter {
+.textCenter {
   position: relative;
-  left: -13%;
+  left: 30%;
+}
+.buttonCenter
+{
+  position: relative;
+  left:29%;
+}
+.Demobutton
+{
+  color:black;
+  font-size: 15px;
 }
 
 .fixedHeightColumn:before {
@@ -426,8 +490,8 @@ code {
   width: 100%;
 }
 .childMainCrousal {
-  display: table-cell;
-  vertical-align: middle;
+  /* display: table-cell;
+  vertical-align: middle; */
   margin: 0;
   align-content: center;
   /* width: 100%; */

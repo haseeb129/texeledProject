@@ -81,7 +81,7 @@ class Aside extends Component {
         </SidebarHeader>
 
         <SidebarContent>
-          <Menu iconShape="circle">
+          <Menu >
             <MenuItem style={{ paddingLeft: "40px", marginBottom: "8px" }}>
               <ScrollTo selector={`#landingPageP1`}>
                 <span className="sidebarFontSize">Landing Page P1</span>
