@@ -65,7 +65,7 @@ class DemoPageGeneric extends Component {
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
-                
+                    padding:"1px"
                   }}
                 >
                   <span className="Demobutton">
@@ -111,6 +111,7 @@ class DemoPageGeneric extends Component {
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
+                    padding:"1px"
                 
                   }}
                 >
@@ -157,6 +158,7 @@ class DemoPageGeneric extends Component {
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
+                    padding:"1px"
                 
                   }}
                 >
@@ -203,6 +205,7 @@ class DemoPageGeneric extends Component {
                     borderStyle: "groove",
                     borderColor: "black",
                     borderWidth: "2px",
+                    padding:"1px"
                 
                   }}
                 >

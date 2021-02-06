@@ -79,6 +79,31 @@ code {
   .containerMainCrousal {
     display: none !important;
   }
+  .div1
+  {
+    height: 0;
+  }
+  .div2
+  {
+    top: 25% !important;
+  }
+  .video
+  {
+    height: 50% !important;
+    width: 100% !important;
+  }
+  .heading
+  {
+    font-size: 14px;
+  }
+  .description
+  {
+    font-size: 12px;
+  }
+  .video1
+  {
+    display: none;
+  }
 }
 
 .containerVideo {
@@ -95,6 +120,21 @@ code {
   top: 50%;
   left: 50%;
   margin: -25px 0 0 -25px; */
+}
+.video
+{
+  height: 100%;
+  width: 100% ;
+}
+.video1
+{
+  height: 100%;
+  width: 100% ;
+}
+.video2
+{
+  height: 100%;
+  width: 100% ;
 }
 
 .container4 {
@@ -334,15 +374,24 @@ code {
 
 .div1 {
   position: relative;
+  height: 800px;
   /* height: 100vh; */
   /* min-height: 100vh; */
   /* width: 100%; */
+}
+.heading{
+
+  color: lightgray;
+}
+.description
+{
+  color: lightgray;
 }
 
 .div2 {
   position: absolute;
 
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-content: center;
@@ -508,8 +557,14 @@ code {
   padding-right: 10%;
 }
 
-@media screen and (max-width: 600px) {
-  .showLogo {
-    /* display: none; */
+
+@media screen and (min-width: 600px) {
+  .Hide-Web
+  {
+    display: none;
+  }
+  .video2
+  {
+    display: none;
   }
 }
