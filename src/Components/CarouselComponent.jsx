@@ -15,7 +15,7 @@ class CarouselComponent extends Component {
             style={{
               color: "black",
               float: "right",
-              // fontStyle: "italic",
+              fontStyle: "italic",
             }}
           >
             Believe it or not, this is a render

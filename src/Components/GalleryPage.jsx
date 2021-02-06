@@ -27,26 +27,21 @@ class GalleryPage extends Component {
                   className="fake_imgGallery"
                   alt=""
                 />
-                <Button
-                  variant="default"
-                  className="customButton fake_imgGallery1"
-                  style={{
-                    borderStyle: "groove",
-                    borderColor: "black",
-                    borderWidth: "2px",
-                  }}
-                >
-                  <span
+                <div className="wrapper2">
+                  <Button
+                    variant="default"
+                    className="customButton"
                     style={{
-                      color: "black",
-                      fontSize: "12px",
-                      padding: "2px",
-                      wordWrap: "break-word",
+                      borderStyle: "groove",
+                      borderColor: "black",
+                      borderWidth: "2px",
                     }}
                   >
-                    EXPLORE
-                  </span>
-                </Button>
+                    <span style={{ color: "black", fontSize: "15px" }}>
+                      E X P L O R E
+                    </span>
+                  </Button>
+                </div>
               </div>
               <span style={{ marginBottom: "0px", marginLeft: "3%" }}>
                 Project X

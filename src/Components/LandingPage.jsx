@@ -11,7 +11,7 @@ class LandingPage extends Component {
   };
   render() {
     return (
-      <div className="p-1 allPageSize">
+      <div className="p-3 allPageSize">
         <div className="containerMain">
           <div className="childMain">
             <div className="div1">
@@ -25,7 +25,21 @@ class LandingPage extends Component {
               <div className="div2">
                 <h1>TEXELED</h1>
                 <p>TEXELED TEXELED TEXELED TEXELED.</p>
-                <Button onClick={this.controlVideo}>Play Video</Button>
+                <div className="wrapper2">
+                  <Button
+                    variant="default"
+                    className="customButton"
+                    style={{
+                      borderStyle: "groove",
+                      borderColor: "black",
+                      borderWidth: "2px",
+                    }}
+                  >
+                    <span style={{ color: "black", fontSize: "15px" }}>
+                      P L A Y
+                    </span>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

@@ -68,10 +68,8 @@ class Aside extends Component {
                 }}
               >
                 <img
-                  style={{ width: "200px" }}
+                  style={{ width: "160px", height: "130px" }}
                   src={logo5}
-                  width="100px"
-                  height="150px"
                   // className="d-inline-block align-top"
                   alt=""
                 />
