@@ -334,12 +334,14 @@ code {
 
 .div1 {
   position: relative;
+  /* height: 100vh; */
   /* min-height: 100vh; */
   /* width: 100%; */
 }
 
 .div2 {
   position: absolute;
+
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -508,6 +510,6 @@ code {
 
 @media screen and (max-width: 600px) {
   .showLogo {
-    display: none;
+    /* display: none; */
   }
 }
