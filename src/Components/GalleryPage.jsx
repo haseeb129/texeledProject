@@ -4,7 +4,7 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 class GalleryPage extends Component {
   render() {
     return (
-      <div className="allPageSize">
+      <div className="Lastpages">
         <br />
         <Container fluid>
           <h1 style={{ textAlign: "center" }} className="Heading">

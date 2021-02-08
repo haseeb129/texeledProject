@@ -15,11 +15,11 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="p-2 allPageSize">
-          <Row>
-            <img src={logo5}  className="Hide-Web" />
+          <Row className="center">
+            <img src={logo5} style={{width:"23%"}} className="Hide-Web" />
             </Row>
         <div className="containerMain">
-          <div className="childMain">
+          <div className="childMainn">
           
         
             <div className="div1" >
@@ -28,6 +28,7 @@ class LandingPage extends Component {
              
                   width="100%"
                   height="100%"
+         
                   url={video}
                   playing={this.state.playing}
                   controls={false}

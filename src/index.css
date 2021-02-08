@@ -44,7 +44,7 @@ code {
 }
 .Content {
   line-height: 28px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .Heading {
   font-size: 40px;
@@ -80,7 +80,7 @@ code {
     display: none !important;
   }
   .div1 {
-    height: 0;
+    height: 600px;
   }
   .div2 {
     top: 25% !important;
@@ -214,7 +214,8 @@ code {
 }
 
 .allPageSize {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -338,7 +339,12 @@ code {
   position: relative;
   width: 100%;
 }
-
+.Lastpages
+{
+  min-height: 85vh;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .containerTest1 {
   position: absolute;
   top: 30%;
@@ -365,7 +371,7 @@ code {
 
 .div1 {
   position: relative;
-  height: 800px;
+  /* height: 800px; */
   /* height: 100vh; */
   /* min-height: 100vh; */
   /* width: 100%; */
@@ -502,7 +508,7 @@ code {
 .containerMain {
   /* position: relative; */
   display: table;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   width: 100%;
 }
 
@@ -514,7 +520,14 @@ code {
   top: 50%;
   margin-top: -25%; */
 }
-
+.childMainn {
+  width: 100%;
+  /* display: table-cell;
+  vertical-align: middle; */
+  /* position: absolute;
+  top: 50%;
+  margin-top: -25%; */
+}
 .containerMainCrousal {
   /* position: relative; */
   display: table;
@@ -546,10 +559,16 @@ code {
 .marginRight {
   padding-right: 10%;
 }
+.center
+{
+  justify-content: center;
+  display: flex;
+}
 
 @media screen and (min-width: 600px) {
   .Hide-Web {
     display: none;
+    width: 23%;
   }
   .video2 {
     display: none;
