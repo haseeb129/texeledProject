@@ -10,7 +10,9 @@ class LandingPagep2 extends Component {
         <Container fluid>
           <Row>
             <Col md={6} className="fixedHeightColumn">
-              <h1 style={{ textAlign: "center" }} className="Heading">Landing Page P2</h1>
+              <h1 style={{ textAlign: "center" }} className="Heading">
+                Landing Page P2
+              </h1>
               <div className="allPageSizeInner">
                 <p className="p-2 Content">
                   In ancient manuscripts, another means to divide sentences into
@@ -48,8 +50,8 @@ class LandingPagep2 extends Component {
                   Web and email. Wikipedia itself employs this format.[
                 </p>
               </div>
-              <br />
-              <div className="wrapper2">
+
+              <div className="wrapper2 mt-1">
                 <Button
                   variant="default"
                   className="customButton"

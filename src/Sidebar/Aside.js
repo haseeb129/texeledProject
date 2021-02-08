@@ -50,7 +50,7 @@ class Aside extends Component {
         <SidebarHeader>
           <div
             className="btn-toggle "
-            style={{ margin: "2px" }}
+            style={{}}
             onClick={() => this.props.handleToggleSidebar(false)}
           >
             <FaBars />
