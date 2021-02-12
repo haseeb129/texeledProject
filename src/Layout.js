@@ -25,6 +25,7 @@ class Layout extends Component {
       <>
         <div className={`app ${this.state.toggled ? "toggled" : ""}`}>
           <Aside
+            style={{ display: "none" }}
             {...this.props}
             collapsed={this.state.collapsed}
             toggled={this.state.toggled}

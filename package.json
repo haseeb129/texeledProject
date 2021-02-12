@@ -20,9 +20,10 @@
     "react-player": "^2.8.2",
     "react-pro-sidebar": "^0.4.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.1",
     "react-scroll": "^1.8.1",
     "react-scroll-into-view": "^1.8.2",
+    "react-simple-image-viewer": "0.0.8",
     "react-social-icons": "^4.1.0",
     "react-switch": "^5.0.1",
     "social-media-icons-react": "^1.1.2"

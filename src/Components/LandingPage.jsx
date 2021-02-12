@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-import { Row,  } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import video from "../assets/sample.mp4";
 import Image1 from "../assets/sofas.jpg";
@@ -15,27 +15,20 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="p-2 allPageSize">
-          <Row>
-            <img src={logo5}  className="Hide-Web" />
-            </Row>
+        <Row className="center">
+          <img src={logo5} style={{ width: "33%" }} className="Hide-Web" />
+        </Row>
         <div className="containerMain">
-          <div className="childMain">
-          
-        
-            <div className="div1" >
-          
-                <ReactPlayer
-             
-                  width="100%"
-                  height="100%"
-                  url={video}
-                  playing={this.state.playing}
-                  controls={false}
-                  className="video"
-                />
-
-         
-
+          <div className="childMainn">
+            <div className="div1">
+              <ReactPlayer
+                width="100%"
+                height="100%"
+                url={video}
+                playing={this.state.playing}
+                controls={false}
+                className="video"
+              />
 
               {/* {!this.state.playing && (
                 <img
