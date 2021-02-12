@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 import { Row, Col, Container, Button } from "react-bootstrap";
-import ImageGallery from "react-image-gallery";
+import Modelbox from "../Components/Modelbox/Modelbox";
+// import ImageGallery from "react-image-gallery";
 // import "react-image-gallery/styles/css/image-gallery.css";
 // const images = [
 //   {
@@ -26,8 +27,11 @@ class DemoPageGeneric extends Component {
         <br />
 
         <Container fluid>
-          <h1 style={{ textAlign: "center" }} className="Heading">Demo Page Generic</h1>
-          <Row>
+          <h1 style={{ textAlign: "center" }} className="Heading">
+            Demo Page Generic
+          </h1>
+          <Modelbox />
+          {/* <Row>
             <Col md={6} sm={6} className="p-4">
               <ImageGallery
                 showFullscreenButton={false}
@@ -215,7 +219,7 @@ class DemoPageGeneric extends Component {
                 </Button>
               </div>
             </Col>
-          </Row>
+          </Row>*/}
         </Container>
         {/* 
         <Container fluid>

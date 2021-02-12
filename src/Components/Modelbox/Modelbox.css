@@ -1,0 +1,22 @@
+.bg_pic {
+  width: 100% !important;
+}
+.sd_pic {
+  width: 90.8% !important;
+  /* padding-bottom: 1rem; */
+}
+.spce {
+  padding-bottom: 6%;
+}
+.MuiDialogContent-root:first-child {
+  padding-top: 0px !important;
+}
+.MuiDialogContent-root {
+  padding: 0px 0px !important;
+}
+.col-md-12 {
+  padding-left: 0px !important;
+}
+.col-4 {
+  padding-left: 0px;
+}
