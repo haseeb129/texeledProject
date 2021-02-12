@@ -339,7 +339,12 @@ code {
   position: relative;
   width: 100%;
 }
+<<<<<<< HEAD
 .Lastpages {
+=======
+.Lastpages
+{
+>>>>>>> 642d9ad4445580bb2db28dbb770ed21c2a346083
   min-height: 85vh;
   padding-left: 2%;
   padding-right: 2%;
@@ -559,6 +564,7 @@ code {
 .marginRight {
   padding-right: 10%;
 }
+<<<<<<< HEAD
 .center {
   justify-content: center;
   display: flex;
@@ -567,6 +573,14 @@ code {
   width: 72% !important;
   left: auto !important;
 }
+=======
+.center
+{
+  justify-content: center;
+  display: flex;
+}
+
+>>>>>>> 642d9ad4445580bb2db28dbb770ed21c2a346083
 @media screen and (min-width: 600px) {
   .Hide-Web {
     display: none;
